@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>QALA — Astana City Guide</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Caveat:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="nav">
+        <a href="#" class="logo">
+          QALA
+          <span>ASTANA CITY GUIDE</span>
+        </a>
+
+        <div class="nav-links">
+          <a href="#explore">Explore</a>
+          <a href="#food">Food</a>
+          <a href="#places">Places</a>
+          <a href="#about">About</a>
+        </div>
+
+        <button class="surprise-btn" onclick="surpriseMe()">
+          Surprise me ✨
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+
+      <section class="hero">
+        <div class="hero-overlay"></div>
+
+        <div class="decor decor-one">✦</div>
+        <div class="decor decor-two">♡</div>
+        <div class="decor decor-three">✧</div>
+
+        <div class="hero-content">
+          <div class="welcome">
+            WELCOME TO QALA
+            <span>♡</span>
+          </div>
+
+          <h1>
+            Discover
+            <span>Astana.</span>
+          </h1>
+
+          <p>
+            Your personal guide to the best places to see, eat and experience in
+            the capital of Kazakhstan.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#explore" class="main-btn">
+              Explore Astana
+              <span>→</span>
+            </a>
+
+            <button class="video-btn" onclick="showMessage()">
+              <span class="play">▶</span>
+              A little inspiration
+            </button>
+          </div>
+        </div>
+
+        <div class="category-box">
+          <div class="category-item">
+            <div class="category-icon blue">🏛</div>
+            <div>
+              <strong>See</strong>
+              <small>Landmarks & views</small>
+            </div>
+          </div>
+
+          <div class="category-item">
+            <div class="category-icon orange">🍴</div>
+            <div>
+              <strong>Eat</strong>
+              <small>Restaurants & cafés</small>
+            </div>
+          </div>
+
+          <div class="category-item">
+            <div class="category-icon green">🌿</div>
+            <div>
+              <strong>Walk</strong>
+              <small>Parks & promenades</small>
+            </div>
+          </div>
+
+          <div class="category-item">
+            <div class="category-icon purple">✦</div>
+            <div>
+              <strong>Experience</strong>
+              <small>Culture & fun</small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPLORE -->
+
+      <section class="explore section" id="explore">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">01 — EXPLORE</span>
+
+            <h2>
+              Find your
+              <em>Astana.</em>
+            </h2>
+          </div>
+
+          <p>
+            From iconic architecture to hidden corners — discover the city your
+            way.
+          </p>
+        </div>
+
+        <div class="explore-grid">
+          <div class="explore-card big-card">
+            <div class="explore-number">01</div>
+
+            <div>
+              <h3>See</h3>
+              <p>Iconic buildings, city views and places you can't miss.</p>
+            </div>
+
+            <span class="circle-arrow">↗</span>
+          </div>
+
+          <div class="explore-card food-card">
+            <div class="explore-number">02</div>
+
+            <div>
+              <h3>Eat</h3>
+              <p>My favourite restaurants and delicious discoveries.</p>
+            </div>
+
+            <span class="circle-arrow">↗</span>
+          </div>
+
+          <div class="explore-card walk-card">
+            <div class="explore-number">03</div>
+
+            <div>
+              <h3>Walk</h3>
+              <p>Green parks, riverside walks and beautiful views.</p>
+            </div>
+
+            <span class="circle-arrow">↗</span>
+          </div>
+
+          <div class="explore-card experience-card">
+            <div class="explore-number">04</div>
+
+            <div>
+              <h3>Experience</h3>
+              <p>Culture, entertainment and memorable evenings.</p>
+            </div>
+
+            <span class="circle-arrow">↗</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOD -->
+
+      <section class="food-section" id="food">
+        <div class="food-intro">
+          <div>
+            <span class="eyebrow">02 — MY QALA PICKS ♡</span>
+
+            <h2>
+              Food I love
+              <br />
+              in <em>Astana.</em>
+            </h2>
+
+            <p class="handwriting">
+              personal
+              <br />
+              recommendations
+            </p>
+          </div>
+
+          <p class="food-description">
+            Places I've tried and would happily recommend to you.
+          </p>
+        </div>
+
+        <div class="food-grid">
+          <article class="restaurant-card">
+            <div class="restaurant-image steak-image">
+              <span>QALA PICK ♡</span>
+            </div>
+
+            <div class="restaurant-info">
+              <h3>Steak Devil</h3>
+
+              <a href="#"> Line Brew Reserve </a>
+
+              <p>A place for a really good steak and a great atmosphere.</p>
+
+              <button onclick="restaurantAlert('Steak Devil')">
+                View place <span>→</span>
+              </button>
+            </div>
+          </article>
+
+          <article class="restaurant-card">
+            <div class="restaurant-image korean-image">
+              <span>QALA PICK ♡</span>
+            </div>
+
+            <div class="restaurant-info">
+              <h3>Chachamen</h3>
+
+              <a href="#"> Korean House </a>
+
+              <p>My Korean food recommendation for a cozy dinner.</p>
+
+              <button onclick="restaurantAlert('Chachamen')">
+                View place <span>→</span>
+              </button>
+            </div>
+          </article>
+
+          <article class="restaurant-card">
+            <div class="restaurant-image tary-image">
+              <span>QALA PICK ♡</span>
+            </div>
+
+            <div class="restaurant-info">
+              <h3>TARY</h3>
+
+              <a href="#"> Modern Kazakh cuisine </a>
+
+              <p>A beautiful place to discover modern Kazakh flavours.</p>
+
+              <button onclick="restaurantAlert('TARY')">
+                View place <span>→</span>
+              </button>
+            </div>
+          </article>
+
+          <article class="restaurant-card">
+            <div class="restaurant-image sandyq-image">
+              <span>QALA PICK ♡</span>
+            </div>
+
+            <div class="restaurant-info">
+              <h3>Sandyq Prime</h3>
+
+              <a href="#"> Modern Kazakh cuisine </a>
+
+              <p>A stylish choice for traditional Kazakh flavours.</p>
+
+              <button onclick="restaurantAlert('Sandyq Prime')">
+                View place <span>→</span>
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- PLACES -->
+
+      <section class="places section" id="places">
+        <div class="places-heading">
+          <div>
+            <span class="eyebrow">03 — MUST SEE</span>
+
+            <h2>See <em>Astana.</em></h2>
+          </div>
+
+          <a href="#places"> View all places → </a>
+        </div>
+
+        <div class="places-grid">
+          <article class="place-card">
+            <div class="place-image bayterek-image"></div>
+
+            <div class="place-info">
+              <h3>Bayterek</h3>
+              <p>📍 The symbol of Astana</p>
+            </div>
+          </article>
+
+          <article class="place-card">
+            <div class="place-image expo-image"></div>
+
+            <div class="place-info">
+              <h3>EXPO 2017</h3>
+              <p>📍 Future energy & architecture</p>
+            </div>
+          </article>
+
+          <article class="place-card">
+            <div class="place-image khan-image"></div>
+
+            <div class="place-info">
+              <h3>Khan Shatyr</h3>
+              <p>📍 Shopping & entertainment</p>
+            </div>
+          </article>
+
+          <article class="place-card">
+            <div class="place-image palace-image"></div>
+
+            <div class="place-info">
+              <h3>Palace of Peace</h3>
+              <p>📍 Architecture & harmony</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- MOOD -->
+
+      <section class="mood-section">
+        <div class="mood-content">
+          <span class="eyebrow">04 — CHOOSE YOUR MOOD</span>
+
+          <h2>
+            What are you
+            <em>looking for?</em>
+          </h2>
+
+          <p>Choose your mood and QALA will give you an idea.</p>
+
+          <div class="mood-buttons">
+            <button onclick="chooseMood('hungry')">
+              🍴
+              <span>Hungry</span>
+            </button>
+
+            <button onclick="chooseMood('relax')">
+              🌿
+              <span>Relax</span>
+            </button>
+
+            <button onclick="chooseMood('photo')">
+              📸
+              <span>Photo</span>
+            </button>
+
+            <button onclick="chooseMood('fun')">
+              ✨
+              <span>Fun</span>
+            </button>
+          </div>
+
+          <div id="mood-result">Choose a mood above ✨</div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+
+      <section class="about section" id="about">
+        <div class="about-left">
+          <span class="eyebrow">05 — ABOUT QALA</span>
+
+          <h2>
+            Astana,
+            <br />
+            <em>but personal.</em>
+          </h2>
+        </div>
+
+        <div class="about-right">
+          <p>
+            QALA is a personal city guide created to make discovering Astana
+            easier and more fun.
+          </p>
+
+          <p>
+            No boring lists. Just places worth seeing, tasting and experiencing.
+          </p>
+
+          <div class="about-signature">
+            made with ♡
+            <br />
+            for Astana
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-logo">
+        QALA
+        <span>ASTANA CITY GUIDE</span>
+      </div>
+
+      <p>Discover something beautiful.</p>
+
+      <div>© 2026 QALA</div>
+    </footer>
+
+    <div id="message" class="popup">
+      <div class="popup-box">
+        <button onclick="closeMessage()">×</button>
+        <h3>Astana is waiting ✨</h3>
+        <p>Go outside, try something new and make your own QALA list.</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
